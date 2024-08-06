@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="global.css" />
+    <title>Cadastro Fornecedor/Produto</title>
+  </head>
+  <body>
+    <div class="fluig-style-guide">
+      <main class="fs-xxl-padding-horizontal">
+        <h1 class="fs-text-center fs-color-black fs-lg-margin-bottom">
+          Cadastro de Fornecedor/Produto
+        </h1>
+
+        <form role="form">
+          <section
+            class="fs-border-radius"
+            style="border: 1px solid #a7a7a7; border-top: none"
+          >
+            <h2
+              class="fs-color-white fs-bg-info strong fs-sm-padding fs-font-bold fs-text-md fs-border-radius fs-md-padding-left"
+            >
+              Dados do Fornecedor
+            </h2>
+
+            <fieldset class="row fs-md-padding-horizontal">
+              <legend class="sr-only">Dados do Fornecedor</legend>
+
+              <div
+                class="col-sm-8 form-group fs-display-flex fs-flex-direction-column fs-border-radius"
+              >
+                <label for="razao_social">Razão Social</label>
+                <input
+                  type="text"
+                  name="razao_social"
+                  class="form-control"
+                  id="razao_social"
+                  required
+                />
+              </div>
+
+              <div
+                class="col-md-4 form-group fs-display-flex fs-flex-direction-column fs-border-radius"
+              >
+                <label for="cnpj">CNPJ</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="cnpj"
+                  id="cnpj"
+                  required
+                />
+              </div>
+
+              <div
+                class="col-sm-8 form-group fs-display-flex fs-flex-direction-column fs-border-radius"
+              >
+                <label for="nome-fantasia">Nome Fantasia</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="nome-fantasia"
+                  id="nome-fantasia"
+                  required
+                />
+              </div>
+
+              <div
+                class="col-md-4 form-group fs-display-flex fs-flex-direction-column fs-border-radius"
+              >
+                <label for="inscricao_est">Inscrição Estadual</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="inscricao_est"
+                  id="inscricao_est"
+                  required
+                />
+              </div>
+
+              <div
+                class="col-md-8 form-group fs-display-flex fs-flex-direction-column fs-border-radius"
+              >
+                <label for="cep">CEP</label>
+                <input
+                  class="form-control fs-no-spin"
+                  type="number"
+                  name="cep"
+                  id="cep"
+                  required
+                />
+              </div>
+
+              <div
+                class="col-md-4 form-group fs-display-flex fs-flex-direction-column fs-border-radius fs-"
+              >
+                <label for="inscricao_muni">Inscrição Municipal</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="inscricao_muni"
+                  id="inscricao_muni"
+                  required
+                />
+              </div>
+
+              <div
+                class="col-md-8 form-group fs-display-flex fs-flex-direction-column fs-border-radius fs-"
+              >
+                <label for="endereco">Endereço</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="endereco"
+                  id="endereco"
+                  required
+                />
+              </div>
+
+              <div
+                class="col-md-4 form-group fs-display-flex fs-flex-direction-column fs-border-radius fs-"
+              >
+                <label for="numero">Número</label>
+                <input
+                  type="number"
+                  class="form-control fs-no-spin"
+                  name="numero"
+                  id="numero"
+                  required
+                />
+              </div>
+
+              <div
+                class="col-md-12 form-group fs-display-flex fs-flex-direction-column fs-border-radius fs-"
+              >
+                <label for="complemento">Complemento</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="complemento"
+                  id="complemento"
+                  required
+                />
+              </div>
+
+              <div
+                class="col-md-4 form-group fs-display-flex fs-flex-direction-column fs-border-radius fs-"
+              >
+                <label for="bairro">Bairro</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="bairro"
+                  id="bairro"
+                  required
+                />
+              </div>
+
+              <div
+                class="col-md-4 form-group fs-display-flex fs-flex-direction-column fs-border-radius fs-"
+              >
+                <label for="municipio">Município</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="municipio"
+                  id="municipio"
+                  required
+                />
+              </div>
+
+              <div
+                class="col-md-4 form-group fs-display-flex fs-flex-direction-column fs-border-radius fs-"
+              >
+                <label for="estado">Estado</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="estado"
+                  id="estado"
+                  required
+                />
+              </div>
+
+              <div
+                class="col-md-8 form-group fs-display-flex fs-flex-direction-column fs-border-radius fs-"
+              >
+                <label for="nome_contato">Nome da Pessoa de Contato</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="nome_contato"
+                  id="nome_contato"
+                  required
+                />
+              </div>
+
+              <div
+                class="col-md-2 form-group fs-display-flex fs-flex-direction-column fs-border-radius fs-"
+              >
+                <label for="telefone">Telefone</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  name="telefone"
+                  id="telefone"
+                  required
+                />
+              </div>
+
+              <div
+                class="col-md-2 form-group fs-display-flex fs-flex-direction-column fs-border-radius fs-"
+              >
+                <label for="email">E-mail</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  id="email"
+                  required
+                />
+              </div>
+            </fieldset>
+          </section>
+
+          <section
+            class="fs-border-radius"
+            style="border: 1px solid #a7a7a7; border-top: none"
+          >
+            <h2
+              class="fs-color-white fs-bg-info strong fs-sm-padding fs-font-bold fs-text-md fs-border-radius fs-md-padding-left"
+            >
+              Produtos
+            </h2>
+
+            <div class="fs-md-padding">
+              <ul
+                class="fs-display-flex fs-align-items-center fs-justify-content-center"
+              >
+                <button
+                  type="button"
+                  class="fs-bg-danger fs-xl-margin-right fs-no-border fs-sm-padding fs-border-radius"
+                >
+                  <img src="../public/assets/trash-icon.png" width="24" />
+                </button>
+                <li class="media-list">
+                  <h3 class="">Produto - 1</h3>
+                  <div class="fs-display-flex fs-sm-margin-bottom">
+                    <fieldset class="row">
+                      <div
+                        class="col-sm-12 form-group fs-display-flex fs-flex-direction-column fs-border-radius"
+                      >
+                        <label for="produto">Produto</label>
+                        <input
+                          type="text"
+                          name="produto"
+                          class="form-control"
+                          id="produto"
+                          required
+                        />
+                      </div>
+
+                      <div
+                        class="col-sm-3 form-group fs-display-flex fs-flex-direction-column fs-border-radius"
+                      >
+                        <label for="produto">UND. Medida</label>
+                        <select class="form-control">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+
+                      <div
+                        class="col-sm-3 form-group fs-display-flex fs-flex-direction-column fs-border-radius"
+                      >
+                        <label for="qdtde_estoque">QDTDE. em Estoque:</label>
+                        <input
+                          type="number"
+                          class="form-control fs-no-spin"
+                          name="qdtde_estoque"
+                          id="qdtde_estoque"
+                          required
+                        />
+                      </div>
+                      <div
+                        class="col-sm-3 form-group fs-display-flex fs-flex-direction-column fs-border-radius"
+                      >
+                        <label for="valor_unitario">Valor Unitário:</label>
+                        <input
+                          type="number"
+                          class="form-control fs-no-spin"
+                          name="valor_unitario"
+                          id="valor_unitario"
+                          required
+                        />
+                      </div>
+                      <div
+                        class="col-sm-3 form-group fs-display-flex fs-flex-direction-column fs-border-radius"
+                      >
+                        <label for="valor_total">Valor Total:</label>
+                        <input
+                          type="number"
+                          readonly
+                          class="form-control fs-no-spin"
+                          name="valor_total"
+                          id="valor_total"
+                          required
+                        />
+                      </div>
+                    </fieldset>
+                  </div>
+                </li>
+              </ul>
+
+              <button
+                type="button"
+                class="fs-bg-success fs-color-white fs-no-border fs-sm-padding fs-full-width fs-border-radius"
+              >
+                Adicionar Produto
+              </button>
+            </div>
+          </section>
+
+          <section
+            class="fs-border-radius"
+            style="border: 1px solid #a7a7a7; border-top: none"
+          >
+            <h2
+              class="fs-color-white fs-bg-info strong fs-sm-padding fs-font-bold fs-text-md fs-border-radius fs-md-padding-left"
+            >
+              Anexos
+            </h2>
+
+            <fieldset class="fs-md-padding">
+              <legend class="sr-only">Itens</legend>
+              <h3>Itens</h3>
+
+              <div class="fs-display-flex fs-align-items-center">
+                <button
+                  type="button"
+                  class="fs-sm-padding fs-no-border fs-md-margin-right fs-bg-danger"
+                >
+                  <img src="../public/assets/trash-icon.png" width="24" />
+                </button>
+                <button
+                  type="button"
+                  class="fs-sm-padding fs-no-border fs-md-margin-right fs-bg-info"
+                >
+                  <img src="../public/assets/view-icon.png" width="24" />
+                </button>
+
+                <p class="bold">Documento anexo 1</p>
+              </div>
+              <button
+                class="fs-full-width fs-bg-success fs-no-border fs-color-white fs-border-radius fs-sm-padding fs-md-margin-top"
+              >
+                Incluir Anexo
+              </button>
+            </fieldset>
+          </section>
+          <button
+            class="fs-full-width fs-bg-success fs-no-border fs-color-white fs-border-radius fs-sm-padding fs-md-margin-top"
+          >
+            Salvar Fornecedor
+          </button>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
