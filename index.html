@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
     <script
       src="https://code.jquery.com/jquery-3.5.1.js"
       integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="css/global.css" />
     <title>Cadastro Fornecedor/Produto</title>
   </head>
   <body>
@@ -19,19 +20,15 @@
         </h1>
 
         <form role="form">
-          <section
-            class="fs-border-radius"
-            style="border: 1px solid #a7a7a7; border-top: none"
-          >
+          <section class="panel panel-default">
             <h2
-              class="fs-color-white fs-bg-info strong fs-sm-padding fs-font-bold fs-text-md fs-border-radius fs-md-padding-left"
+              class="fs-color-white fs-bg-info fs-sm-padding fs-font-bold fs-text-md fs-border-radius panel-title"
             >
               Dados do Fornecedor
             </h2>
 
-            <fieldset class="row fs-md-padding-horizontal">
+            <fieldset class="row panel-body">
               <legend class="sr-only">Dados do Fornecedor</legend>
-
               <div
                 class="col-sm-8 form-group fs-display-flex fs-flex-direction-column fs-border-radius"
               >
@@ -229,30 +226,36 @@
             </fieldset>
           </section>
 
-          <section
-            class="fs-border-radius"
-            style="border: 1px solid #a7a7a7; border-top: none"
-          >
+          <section class="panel panel-default">
             <h2
-              class="fs-color-white fs-bg-info strong fs-sm-padding fs-font-bold fs-text-md fs-border-radius fs-md-padding-left"
+              class="fs-color-white fs-bg-info fs-sm-padding fs-font-bold fs-text-md fs-border-radius panel-title"
             >
               Produtos
             </h2>
 
-            <div class="fs-md-padding">
-              <ul
-                class="fs-display-flex fs-align-items-center fs-justify-content-center"
-              >
+            <ul class="list-group panel-body">
+              <li class="fs-display-flex fs-align-items-center">
                 <button
                   type="button"
-                  class="fs-bg-danger fs-xl-margin-right fs-no-border fs-sm-padding fs-border-radius"
+                  class="btn btn-danger fs-lg-margin-right fs-sm-padding"
                 >
-                  <img src="../public/assets/trash-icon.png" width="24" />
+                  <img src="../assets/trash-icon.png" width="24" />
                 </button>
-                <li class="media-list">
-                  <h3 class="">Produto - 1</h3>
-                  <div class="fs-display-flex fs-sm-margin-bottom">
-                    <fieldset class="row">
+                <div class="fs-full-width">
+                  <h3 class="fs-text-xl fs-font-bold">Produto - 1</h3>
+                  <fieldset class="list-group-item media">
+                    <div
+                      class="fs-md-padding pull-left img-circle fs-md-margin-top"
+                      style="background-color: #8290cd"
+                    >
+                      <img
+                        class="media-output"
+                        src="assets/box-icon.png"
+                        title="browser-code"
+                        width="50"
+                      />
+                    </div>
+                    <div class="media-body">
                       <div
                         class="col-sm-12 form-group fs-display-flex fs-flex-direction-column fs-border-radius"
                       >
@@ -316,57 +319,73 @@
                           required
                         />
                       </div>
-                    </fieldset>
-                  </div>
+                    </div>
+                  </fieldset>
+                </div>
+              </li>
+            </ul>
+
+            <button
+              type="button"
+              class="btn btn-success fs-full-width fs-no-border fs-sm-padding fs-md-margin-top"
+            >
+              Adicionar Produto
+            </button>
+          </section>
+
+          <section class="panel panel-default">
+            <h2
+              class="fs-color-white fs-bg-info fs-sm-padding fs-font-bold fs-text-md fs-border-radius panel-title"
+            >
+              Anexos
+            </h2>
+
+            <fieldset class="panel-body">
+              <legend class="sr-only">Itens</legend>
+              <h3>Itens</h3>
+
+              <ul class="list-group">
+                <li
+                  class="list-group-item fs-display-flex fs-align-items-baseline"
+                >
+                  <button type="button" class="btn btn-danger">
+                    <img src="../assets/trash-icon.png" width="24" />
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-info fs-sm-margin-horizontal"
+                  >
+                    <img src="../assets/view-icon.png" width="24" />
+                  </button>
+
+                  <p class="bold">Documento anexo 1</p>
+                </li>
+                <li
+                  class="list-group-item fs-display-flex fs-align-items-baseline"
+                >
+                  <button type="button" class="btn btn-danger">
+                    <img src="../assets/trash-icon.png" width="24" />
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-info fs-sm-margin-horizontal"
+                  >
+                    <img src="../assets/view-icon.png" width="24" />
+                  </button>
+
+                  <p class="bold">Documento anexo 1</p>
                 </li>
               </ul>
 
               <button
                 type="button"
-                class="fs-bg-success fs-color-white fs-no-border fs-sm-padding fs-full-width fs-border-radius"
-              >
-                Adicionar Produto
-              </button>
-            </div>
-          </section>
-
-          <section
-            class="fs-border-radius"
-            style="border: 1px solid #a7a7a7; border-top: none"
-          >
-            <h2
-              class="fs-color-white fs-bg-info strong fs-sm-padding fs-font-bold fs-text-md fs-border-radius fs-md-padding-left"
-            >
-              Anexos
-            </h2>
-
-            <fieldset class="fs-md-padding">
-              <legend class="sr-only">Itens</legend>
-              <h3>Itens</h3>
-
-              <div class="fs-display-flex fs-align-items-center">
-                <button
-                  type="button"
-                  class="fs-sm-padding fs-no-border fs-md-margin-right fs-bg-danger"
-                >
-                  <img src="../public/assets/trash-icon.png" width="24" />
-                </button>
-                <button
-                  type="button"
-                  class="fs-sm-padding fs-no-border fs-md-margin-right fs-bg-info"
-                >
-                  <img src="../public/assets/view-icon.png" width="24" />
-                </button>
-
-                <p class="bold">Documento anexo 1</p>
-              </div>
-              <button
-                class="fs-full-width fs-bg-success fs-no-border fs-color-white fs-border-radius fs-sm-padding fs-md-margin-top"
+                class="btn btn-success fs-full-width fs-no-border fs-sm-padding fs-md-margin-top"
               >
                 Incluir Anexo
               </button>
             </fieldset>
           </section>
+
           <button
             class="fs-full-width fs-bg-success fs-no-border fs-color-white fs-border-radius fs-sm-padding fs-md-margin-top"
           >
